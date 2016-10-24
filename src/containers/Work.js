@@ -1,5 +1,4 @@
 import React from 'react';
-// import WorkCard from '../components/WorkCard';
 import {getWorkCard} from '../utils/helpers.js';
 
 class Work extends React.Component {
@@ -31,7 +30,7 @@ class Work extends React.Component {
     }
     return(
       <div className='row'>
-        // {this.state.wait ? <p style={styles.loading}>loading...</p> : this.state.data.map( (item,index) => <WorkCard {...item} key={index} />)}
+      work
       </div>
     )
   }
