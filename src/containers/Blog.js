@@ -1,5 +1,4 @@
 import React from 'react';
-import {getBlogCard} from '../utils/helpers';
 
 class Blog extends React.Component {
   constructor(){
@@ -30,6 +29,7 @@ class Blog extends React.Component {
     }
     return(
       <div style={{width:'100%'}}>
+      blog
       </div>
     )
   }

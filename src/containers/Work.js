@@ -1,5 +1,4 @@
 import React from 'react';
-import {getWorkCard} from '../utils/helpers.js';
 
 class Work extends React.Component {
   constructor(){
