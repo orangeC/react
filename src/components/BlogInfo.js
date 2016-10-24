@@ -2,7 +2,7 @@ import React from 'react';
 import marked from 'marked';
 import hljs from 'highlight.js';
 
-import {getBlogMd} from '../utils/helpers';
+// import {getBlogMd} from '../utils/helpers';
 
 class BlogInfo extends React.Component {
   constructor(){
