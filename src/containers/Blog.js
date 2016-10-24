@@ -1,5 +1,4 @@
 import React from 'react';
-import BlogCard from '../components/BlogCard';
 import {getBlogCard} from '../utils/helpers';
 
 class Blog extends React.Component {
@@ -31,7 +30,6 @@ class Blog extends React.Component {
     }
     return(
       <div style={{width:'100%'}}>
-        {this.state.wait ? <p style={styles.loading}>loading...</p> : this.state.data.map( (item,index) => <BlogCard {...item} key={index} index={index}/> )}
       </div>
     )
   }
