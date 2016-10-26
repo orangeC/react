@@ -3,6 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import TimePicker from 'material-ui/TimePicker';
+import CircularProgress from 'material-ui/CircularProgress';
 
 class Blog extends React.Component {
   constructor(){
@@ -68,6 +69,9 @@ class Blog extends React.Component {
             format="24hr"
             hintText="Disabled TimePicker"
           />
+          <CircularProgress />
+          <CircularProgress size={60} thickness={7} />
+          <CircularProgress size={80} thickness={5} />
       </div>
     )
   }
