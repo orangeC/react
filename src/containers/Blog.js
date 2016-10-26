@@ -4,6 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import TimePicker from 'material-ui/TimePicker';
 import CircularProgress from 'material-ui/CircularProgress';
+import Paper from 'material-ui/Paper';
 
 class Blog extends React.Component {
   constructor(){
@@ -47,6 +48,13 @@ class Blog extends React.Component {
       },
       timePicker:{
         marginTop:"100px"
+      },
+      style:{
+        height: 100,
+        width: 100,
+        margin: 20,
+        textAlign: 'center',
+        display: 'inline-block',
       }
     }
     return(
@@ -72,6 +80,10 @@ class Blog extends React.Component {
           <CircularProgress />
           <CircularProgress size={60} thickness={7} />
           <CircularProgress size={80} thickness={5} />
+          <Paper style={styles.style} zDepth={1} />
+          <Paper style={styles.style} zDepth={2} />
+          <Paper style={styles.style} zDepth={3} />
+          <Paper style={styles.style} zDepth={4} />
       </div>
     )
   }
