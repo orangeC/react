@@ -2,6 +2,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import TimePicker from 'material-ui/TimePicker';
 
 class Blog extends React.Component {
   constructor(){
@@ -42,6 +43,9 @@ class Blog extends React.Component {
       inkBar:{
         height:"5px",
         marginTop:"-5px"
+      },
+      timePicker:{
+        marginTop:"100px"
       }
     }
     return(
@@ -52,6 +56,18 @@ class Blog extends React.Component {
             <Tab label="two" />
             <Tab label="three" />
       </Tabs>
+      <TimePicker style={styles.timePicker}
+            hintText="12hr Format"
+          />
+          <TimePicker
+            format="24hr"
+            hintText="24hr Format"
+          />
+          <TimePicker
+            disabled={true}
+            format="24hr"
+            hintText="Disabled TimePicker"
+          />
       </div>
     )
   }
