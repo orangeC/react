@@ -3,6 +3,8 @@ import NavHeader from './components/NavHeader';
 import NavFooter from './components/NavFooter';
 import NavLeft from './components/NavLeft';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import "./main.scss"
+
 
 class App extends React.Component {
   getChildContext() {

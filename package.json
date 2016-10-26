@@ -9,10 +9,13 @@
     "start": "node devServer.js",
     "lint": "eslint src"
   },
-  "keywords": [ "react" ],
+  "keywords": [
+    "react"
+  ],
   "author": "pengpeng",
   "license": "CC0-1.0",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.14.0",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.2.5",
@@ -26,7 +29,9 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "file-loader": "^0.9.0",
+    "node-sass": "^3.10.1",
     "rimraf": "^2.4.3",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
