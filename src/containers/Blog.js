@@ -1,6 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
+import {Tabs, Tab} from 'material-ui/Tabs';
 
 class Blog extends React.Component {
   constructor(){
@@ -32,6 +33,11 @@ class Blog extends React.Component {
     return(
       <div style={{width:'100%'}}>
       <RaisedButton label="cheng" />
+      <Tabs>
+            <Tab label="one" />
+            <Tab label="two" />
+            <Tab label="three" />
+      </Tabs>
       </div>
     )
   }
