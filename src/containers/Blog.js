@@ -1,4 +1,6 @@
 import React from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class Blog extends React.Component {
   constructor(){
@@ -29,7 +31,7 @@ class Blog extends React.Component {
     }
     return(
       <div style={{width:'100%'}}>
-      blog
+      <RaisedButton label="cheng" />
       </div>
     )
   }
