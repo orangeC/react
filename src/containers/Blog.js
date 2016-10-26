@@ -28,12 +28,26 @@ class Blog extends React.Component {
         textAlign:'center',
         height:'100vh',
         lineHeight:'100vh'
+      },
+      tabs:{
+        width:"400px",
+        position:"absolute",
+        right:"60px",
+        textTransform:"uppercase"
+      },
+      tab:{
+        height:"30px",
+        color:"#fff"
+      },
+      inkBar:{
+        height:"5px",
+        marginTop:"-5px"
       }
     }
     return(
       <div style={{width:'100%'}}>
       <RaisedButton label="cheng" />
-      <Tabs>
+      <Tabs style={styles.tabs}>
             <Tab label="one" />
             <Tab label="two" />
             <Tab label="three" />
