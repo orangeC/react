@@ -2,6 +2,7 @@ import React from 'react';
 import NavHeader from './components/NavHeader';
 import NavFooter from './components/NavFooter';
 import NavLeft from './components/NavLeft';
+import AppBar from 'material-ui/AppBar';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import "./main.scss"
 
@@ -18,16 +19,13 @@ class App extends React.Component {
     }
   }
   setNavBarState(){
-    this.setState({navLeftShow : window.innerWidth > 760 ? true : false})
+    this.setState({navBarShow : document.body.clientWidth > 760 })
   }
-  componentDidMount(){
+  componentWillMount(){
     this.setNavBarState()
     window.onresize = this.setNavBarState.bind(this)
   }
   componentWillReceiveProps(){
-    this.getTitle()
-  }
-  componentWillMount(){
     this.getTitle()
   }
   getTitle(){
@@ -40,11 +38,11 @@ class App extends React.Component {
   render () {
     return(
       <div className="content-wrap">
-        {this.state.navLeftShow ? <NavLeft title={this.state.title}/> : <NavHeader title={this.state.title}/>}
+        {this.state.navBarShow ? <NavLeft title={this.state.title}/> : <AppBar title={this.state.title}/>}
         <div className="content-main">
           {this.props.children}
         </div>
-        {this.state.navLeftShow ? null : <NavFooter />}
+        
 
       </div>
     )

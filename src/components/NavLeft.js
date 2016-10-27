@@ -5,7 +5,7 @@ class NavLeft extends React.Component {
   render () {
     let styles={
       navLeft:{
-        width:'300px',
+        width:'20%',
         height:'100vh',
         backgroundColor:'#673AB7',
         display:'flex',
@@ -27,11 +27,12 @@ class NavLeft extends React.Component {
         display:"block"
       },
       glyphicon:{
-        marginRight:'10px'
+        marginLeft:'-9%',
+        marginRight:'8px'
       }
     }
     return(
-      <div className="nav-left" style={styles.navLeft}>
+      <div style={styles.navLeft}>
         <h3 style={styles.h3}>My <span style={{color:'#388E3C'}}>{this.props.title}</span></h3>
         <Link to='/' onlyActiveOnIndex={true} activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-home" style={styles.glyphicon}></span>Home</Link>
         <Link to='/blog' activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-file" style={styles.glyphicon}></span>Blog</Link>
