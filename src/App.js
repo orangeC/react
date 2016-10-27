@@ -21,7 +21,7 @@ class App extends React.Component {
   setNavBarState(){
     this.setState({navBarShow : document.body.clientWidth > 760 })
   }
-  componentWillMount(){
+  componentDidMount(){
     this.setNavBarState()
     window.onresize = this.setNavBarState.bind(this)
   }
@@ -35,15 +35,15 @@ class App extends React.Component {
             this.context.router.isActive('/work') ? 'Work' : 'info'
     })
   }
+  
   render () {
     return(
       <div className="content-wrap">
-        {this.state.navBarShow ? <NavLeft title={this.state.title}/> : <AppBar title={this.state.title}/>}
+        {this.state.navBarShow ? <NavLeft title={this.state.title}/> : <AppBar title={this.state.title} /> }
         <div className="content-main">
           {this.props.children}
         </div>
-        
-
+          {this.state.navBarShow ? null : <NavFooter />}
       </div>
     )
   }
