@@ -4,9 +4,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import FontIcon from 'material-ui/FontIcon';
 import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
 class NavFooter extends React.Component {
-  constructor(props,context){
-    super(props,context)
-  }
+  
   handleTabsChange(value){
     this.context.router.push(value)
   }
