@@ -18,7 +18,7 @@ class NavLeft extends React.Component {
         textAlign:'center'
       },
       text:{
-        width:'300px',
+        width:'270px',
         height:'60px',
         lineHeight:'60px',
         textDecoration:'none',
