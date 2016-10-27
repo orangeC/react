@@ -4,34 +4,44 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import FontIcon from 'material-ui/FontIcon';
 import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
 class NavFooter extends React.Component {
+  constructor(props,context){
+    super(props,context)
+  }
+  handleTabsChange(value){
+    this.context.router.push(value)
+  }
   render () {
     return(
       <div >
-        // <Link to='/' activeStyle={{borderBottom:"5px solid #FF4081"}} onlyActiveOnIndex={true} className="nav-text"><span className="glyphicon glyphicon-home"></span><br />Home</Link>
-        // <Link to='/blog' activeStyle={{borderBottom:"5px solid #FF4081"}} className="nav-text"><span className="glyphicon glyphicon-file"></span><br />Blog</Link>
-        // <Link to='/work' activeStyle={{borderBottom:"5px solid #FF4081"}} className="nav-text"><span className="glyphicon glyphicon-briefcase"></span><br />Work</Link>
-        // <Link to='/about' activeStyle={{borderBottom:"5px solid #FF4081"}} className="nav-text nav-text-last"><span className="glyphicon glyphicon-user"></span><br />about Me</Link>
-        <Tabs>
+        <Tabs onChange={this.handleTabsChange.bind(this)} >
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-home" />}
               label="HMOE"
+              value="/"
             />
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-file" />}
               label="BLOG"
+              value="/blog"
             />
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-briefcase" />}
               label="WORK"
+              value="/work"
             />
             <Tab
               icon={<MapsPersonPin />}
               label="ABOUT ME"
+              value="/about"
             />
           </Tabs>
       </div>
     )
   }
+}
+
+NavFooter.contextTypes={
+  router:React.PropTypes.object.isRequired
 }
 
 export default NavFooter;
