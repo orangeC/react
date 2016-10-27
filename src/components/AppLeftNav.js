@@ -1,5 +1,5 @@
 import React from 'react';
-import LeftNav from 'material-ui/left-nav';
+import LeftNav from './NavBar';
 
 class AppLeftNav extends React.Component {
   constructor(){
@@ -8,7 +8,11 @@ class AppLeftNav extends React.Component {
       open:false
     }
   }
-
+  handleToggle(){
+    this.setState({
+      open:!this.state.open
+    })
+  }
   render () {
     
     return(
