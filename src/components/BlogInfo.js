@@ -12,15 +12,15 @@ class BlogInfo extends React.Component {
       wait:true
     }
   }
-  componentDidMount(){
-    getBlogMd(this.props.params.url)
-    .then((resData) =>{
-      this.setState({
-        data:resData.getData,
-        wait:false
-      })
-    })
-  }
+  // componentDidMount(){
+  //   getBlogMd(this.props.params.url)
+  //   .then((resData) =>{
+  //     this.setState({
+  //       data:resData.getData,
+  //       wait:false
+  //     })
+  //   })
+  // }
   render () {
     let styles={
       loading:{

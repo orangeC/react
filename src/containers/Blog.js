@@ -13,15 +13,15 @@ class Blog extends React.Component {
       wait:true
     }
   }
-  componentDidMount(){
-    getBlogCard()
-    .then((resData) => {
-      this.setState({
-        data:resData.getData,
-        wait:false
-      })
-    })
-  }
+  // componentDidMount(){
+  //   getBlogCard()
+  //   .then((resData) => {
+  //     this.setState({
+  //       data:resData.getData,
+  //       wait:false
+  //     })
+  //   })
+  // }
   render () {
     let styles={
       loading:{

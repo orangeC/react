@@ -8,15 +8,15 @@ class Work extends React.Component {
       wait:true
     }
   }
-  componentDidMount(){
-    getWorkCard()
-    .then((resData) => {
-      this.setState({
-        data:resData.getData,
-        wait:false
-      })
-    })
-  }
+  // componentDidMount(){
+  //   getWorkCard()
+  //   .then((resData) => {
+  //     this.setState({
+  //       data:resData.getData,
+  //       wait:false
+  //     })
+  //   })
+  // }
   render () {
     let styles={
       loading:{
