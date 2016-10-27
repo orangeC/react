@@ -3,6 +3,7 @@ import NavHeader from './components/NavHeader';
 import NavFooter from './components/NavFooter';
 import NavLeft from './components/NavLeft';
 import AppBar from 'material-ui/AppBar';
+import AppLeftNav from './components/AppLeftNav';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import "./main.scss"
 
@@ -14,7 +15,6 @@ class App extends React.Component {
   constructor(){
     super();
     this.state={
-      navLeftShow:false,
       title:'Home'
     }
   }
@@ -35,12 +35,16 @@ class App extends React.Component {
             this.context.router.isActive('/work') ? 'Work' : 'info'
     })
   }
-  
+  handleLeftBtn(){
+    console.log(1)
+    this.refs.leftNav.handleToggle()
+  }
   render () {
     return(
       <div className="content-wrap">
-        {this.state.navBarShow ? <NavLeft title={this.state.title}/> : <AppBar title={this.state.title} /> }
+        {this.state.navBarShow ? <NavLeft  title={this.state.title}/> : <AppBar title={this.state.title} onLeftIconButtonTouchTap={this.handleLeftBtn.bind(this)} /> }
         <div className="content-main">
+        <AppLeftNav ref="leftNav" />
           {this.props.children}
         </div>
           {this.state.navBarShow ? null : <NavFooter />}
