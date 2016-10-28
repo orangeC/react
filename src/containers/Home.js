@@ -18,7 +18,7 @@ class Home extends React.Component {
         backgroundColor:'rgba(0,0,0,0.3)'
       },
       inner:{
-        paddingTop:'220px'
+        paddingTop:'32vh'
       },
       h1:{
         margin:'0',

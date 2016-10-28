@@ -13,15 +13,6 @@ class Blog extends React.Component {
       wait:true
     }
   }
-  // componentDidMount(){
-  //   getBlogCard()
-  //   .then((resData) => {
-  //     this.setState({
-  //       data:resData.getData,
-  //       wait:false
-  //     })
-  //   })
-  // }
   render () {
     let styles={
       loading:{
@@ -76,13 +67,6 @@ class Blog extends React.Component {
             format="24hr"
             hintText="Disabled TimePicker"
           />
-          <CircularProgress />
-          <CircularProgress size={60} thickness={7} />
-          <CircularProgress size={80} thickness={5} />
-          <Paper style={styles.style} zDepth={1} />
-          <Paper style={styles.style} zDepth={2} />
-          <Paper style={styles.style} zDepth={3} />
-          <Paper style={styles.style} zDepth={4} />
       </div>
     )
   }
