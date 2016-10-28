@@ -22,9 +22,6 @@ class NavBar extends React.Component{
 	  		open:false
 	  	})
 	  }
-    handleTabsChange(value){
-    	this.context.router.push(value)
-  	}
 	render(){
 		let styles={
 			nav:{
@@ -55,12 +52,12 @@ class NavBar extends React.Component{
 			<div>
 		        <Drawer docked={false} width={200}
 		          open={this.state.open}
-		          onRequestChange={this.handleTabsChange.bind(this)} 
+		          onRequestChange={(open) => this.setState({open})}
 		          >
-		          <MenuItem onTouchTap={this.handleClose} value="/" >Home</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose} value="/blog" >Blog</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose} value="/work" >Work</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose} value="/about" >About me</MenuItem>
+		          <Link to="/" onlyActiveOnIndex={true}><MenuItem onTouchTap={this.handleClose.bind(this)} >Home</MenuItem></Link>
+		          <Link to="/blog"><MenuItem onTouchTap={this.handleClose.bind(this)}>Blog</MenuItem></Link>
+		          <Link to="/work"><MenuItem onTouchTap={this.handleClose.bind(this)}>Work</MenuItem></Link>
+		          <Link to="/about"><MenuItem onTouchTap={this.handleClose.bind(this)}>About me</MenuItem></Link>
 		        </Drawer>
 		    </div>
 			)
