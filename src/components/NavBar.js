@@ -8,6 +8,11 @@ class NavBar extends React.Component{
 			show:false
 		}
 	}
+	handleToggle(){
+	    this.setState({
+	      show:!this.state.show
+	    })
+	  }
 	render(){
 		let styles={
 			nav:{
@@ -30,7 +35,7 @@ class NavBar extends React.Component{
 			}
 		}
 		return (
-			<div>	
+			<div onChange={this.handleToggle.bind(this)} >	
 				<button onClick={ () => this.setState({show:! this.state.show})}>click</button>
 				<div style={styles.nav} >导航</div>
 				<div style={styles.navbar} onClick={ () => this.setState({show:! this.state.show})}>遮罩</div>

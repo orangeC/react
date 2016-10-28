@@ -3,7 +3,7 @@ import NavHeader from './components/NavHeader';
 import NavFooter from './components/NavFooter';
 import NavLeft from './components/NavLeft';
 import AppBar from 'material-ui/AppBar';
-import AppLeftNav from './components/AppLeftNav';
+import NavBar from './components/NavBar';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import "./main.scss"
 
@@ -44,7 +44,7 @@ class App extends React.Component {
       <div className="content-wrap">
         {this.state.navBarShow ? <NavLeft  title={this.state.title}/> : <AppBar title={this.state.title} onLeftIconButtonTouchTap={this.handleLeftBtn.bind(this)} /> }
         <div className="content-main">
-        <AppLeftNav ref="leftNav" />
+          {this.state.navBarShow ? null : <NavBar ref="leftNav" />}
           {this.props.children}
         </div>
           {this.state.navBarShow ? null : <NavFooter />}
