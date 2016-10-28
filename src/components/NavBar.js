@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {Link} from 'react-router';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -21,6 +22,9 @@ class NavBar extends React.Component{
 	  		open:false
 	  	})
 	  }
+    handleTabsChange(value){
+    	this.context.router.push(value)
+  	}
 	render(){
 		let styles={
 			nav:{
@@ -51,15 +55,19 @@ class NavBar extends React.Component{
 			<div>
 		        <Drawer docked={false} width={200}
 		          open={this.state.open}
-		          onRequestChange={(open) => this.setState({open})} >
-		          <MenuItem onTouchTap={this.handleClose}>Home</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose}>Blog</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose}>Work</MenuItem>
-		          <MenuItem onTouchTap={this.handleClose}>About me</MenuItem>
+		          onRequestChange={this.handleTabsChange.bind(this)} 
+		          >
+		          <MenuItem onTouchTap={this.handleClose} value="/" >Home</MenuItem>
+		          <MenuItem onTouchTap={this.handleClose} value="/blog" >Blog</MenuItem>
+		          <MenuItem onTouchTap={this.handleClose} value="/work" >Work</MenuItem>
+		          <MenuItem onTouchTap={this.handleClose} value="/about" >About me</MenuItem>
 		        </Drawer>
 		    </div>
 			)
 	}
+}
+NavBar.contextTypes={
+  router:React.PropTypes.object.isRequired
 }
 
 export default NavBar
