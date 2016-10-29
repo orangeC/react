@@ -5,7 +5,7 @@ import NavLeft from './components/NavLeft';
 import AppBar from 'material-ui/AppBar';
 import NavBar from './components/NavBar';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import "./main.scss"
+import "./style/main.scss"
 
 
 class App extends React.Component {
