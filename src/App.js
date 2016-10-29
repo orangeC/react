@@ -19,9 +19,9 @@ class App extends React.Component {
     }
   }
   setNavBarState(){
-    this.setState({navBarShow : document.body.clientWidth > 760 })
+    this.setState({navBarShow : window.innerWidth > 760 })
   }
-  componentDidMount(){
+  componentWillMount(){
     this.setNavBarState()
     window.onresize = this.setNavBarState.bind(this)
   }
