@@ -3,5 +3,8 @@ html{
 	body{
 		background-color: #0ff;
 	}
+	ul,li{
+		  list-style: none;
+		}
 }
 @import "account"

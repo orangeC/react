@@ -5,7 +5,7 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 import axios from 'axios';
 import isEmpty from 'lodash/isEmpty';
-import UserInfo from './user/UserInfo';
+import UserInfo from './../user/UserInfo';
 
 class Account extends React.Component{
 	constructor(){
@@ -28,8 +28,9 @@ class Account extends React.Component{
         });
 	}
 	render(){
+		let GitHubInfo;
 	    if(!isEmpty(this.state.user)) {
-	      let GitHubInfo = (
+	      GitHubInfo = (
 	        <UserInfo userInfo={this.state.user} />
 	      );
 	    }
