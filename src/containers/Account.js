@@ -4,7 +4,7 @@ import TextField from 'material-ui/TextField';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import axios from 'axios';
-import isEmpty from 'lodash/lang/isEmpty';
+import isEmpty from 'lodash/isEmpty';
 import UserInfo from './user/UserInfo';
 
 class Account extends React.Component{
