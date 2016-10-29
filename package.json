@@ -29,6 +29,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "file-loader": "^0.9.0",
+    "lodash": "^4.16.4",
     "material-ui": "^0.15.4",
     "node-sass": "^3.10.1",
     "rimraf": "^2.4.3",
