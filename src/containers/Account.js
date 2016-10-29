@@ -5,9 +5,22 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 
 class Account extends React.Component{
+	handleSubmit(e){
+		e.preventDefault();
+		let account = this.refs.account.getValue();
+		console.log(account)
+	}
 	render(){
 		return (
-				<div>account</div>
+				<div className="account">
+				<Card className="content">
+					<form onSubmit={this.handleSubmit.bind(this)} >
+						<TextField hintText="write something" 
+						           ref="account" />
+						<FlatButton label=" submit " secondary={true} type="submit" />
+					</form>
+				</Card>
+				</div>
 			)
 	}
 }
