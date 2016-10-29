@@ -12,11 +12,7 @@ class NavFooter extends React.Component {
     return(
       <div >
         <Tabs onChange={this.handleTabsChange.bind(this)} >
-            <Tab
-              icon={<FontIcon className="glyphicon glyphicon-home" />}
-              label="HMOE"
-              value="/"
-            />
+            
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-file" />}
               label="BLOG"
@@ -26,6 +22,11 @@ class NavFooter extends React.Component {
               icon={<FontIcon className="glyphicon glyphicon-briefcase" />}
               label="WORK"
               value="/work"
+            />
+            <Tab
+              icon={<FontIcon className="glyphicon glyphicon-briefcase" />}
+              label="ACCOUNT"
+              value="/account"
             />
             <Tab
               icon={<MapsPersonPin />}

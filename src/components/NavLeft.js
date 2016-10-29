@@ -37,6 +37,7 @@ class NavLeft extends React.Component {
         <Link to='/' onlyActiveOnIndex={true} activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-home" style={styles.glyphicon}></span>Home</Link>
         <Link to='/blog' activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-file" style={styles.glyphicon}></span>Blog</Link>
         <Link to='/work' activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-briefcase" style={styles.glyphicon}></span>Work</Link>
+        <Link to='/account' activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-briefcase" style={styles.glyphicon}></span>account</Link>
         <Link to='/about' activeStyle={{backgroundColor:'#009688'}} className='text' style={styles.text}><span className="glyphicon glyphicon-user" style={styles.glyphicon}></span>about Me</Link>
       </div>
     )
