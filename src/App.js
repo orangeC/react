@@ -37,7 +37,6 @@ class App extends React.Component {
     })
   }
   handleLeftBtn(){
-    console.log(1)
     this.refs.leftNav.handleToggle()
   }
   render () {
