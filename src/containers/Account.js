@@ -17,7 +17,6 @@ class Account extends React.Component{
 	handleSubmit(e){
 		e.preventDefault();
 		let account = this.refs.account.getValue();
-		console.log(account);
 		axios.get(`https://api.github.com/users/${account}`)
 		.then( (res) =>{
 			this.setState({user:res.data})
