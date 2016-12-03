@@ -18,9 +18,9 @@ class Routes extends React.Component {
           <IndexRoute component={Home} />
           <Route path='/work' component={Work} />
           <Route path='/blog' component={Blog} />
+          <Route path='item/:title' component={Item} />
           <Route path='/account' component={Account} />
           <Route path='/about' component={About} />
-          <Route path='item/:title' component={Item} />
           
         </Route>
       </Router>
