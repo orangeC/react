@@ -1,16 +1,26 @@
 import React from 'react';
+import axios from "axios";
 var marked  = require("marked")
 
 class Item extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      data:""
+    }
+  }
+  componentDidMount(){
+    let address = this.props.params.title;
+    axios.get(`https://raw.githubusercontent.com/orangeC/react/gh-pages/src/data/${address}.md`)
+    .then(
+        res => this.setState({ data:res.data })
+      )
+  }
   render () {
-    let content = this.props.params.title == 0 ? "第一页":
-    this.props.params.title == 1 ? "第二页":
-    this.props.params.title == 2 ? "第三页":"第n个页面"
+    let content = this.state.data.length == 0 ? "骚等" : marked(this.state.data)
     return(
       <div>
-      {content}
-      {marked("#wwsdd")}
-      <div dangerouslySetInnerHTML={{__html:marked("#wwsdd")}} />
+        <div dangerouslySetInnerHTML={{__html:content}} />
       </div>
     )
   }

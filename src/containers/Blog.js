@@ -2,6 +2,7 @@ import React from 'react';
 import BlogCard from "../components/BlogCard";
 import axios from "axios";
 import CircularProgress from 'material-ui/CircularProgress';
+import Loading from "../components/Loading"
 
 
 class Blog extends React.Component {
@@ -21,7 +22,7 @@ class Blog extends React.Component {
   render () {
     return(
       <div style={{width:'100%'}} className="blog-wrap">
-      {this.state.wait ? <CircularProgress className="circle" /> : this.state.data.map( (item,i) => <BlogCard {...item} key={i} /> )}
+      {this.state.wait ? <Loading /> : this.state.data.map( (item,i) => <BlogCard {...item} key={i} /> )}
       </div>
     )
   }
