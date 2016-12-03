@@ -7,6 +7,7 @@ import Blog from './containers/Blog';
 import Work from './containers/Work';
 import About from './containers/About';
 import Account from './containers/Account';
+import Item from './item/index.js';
 
 
 class Routes extends React.Component {
@@ -19,6 +20,7 @@ class Routes extends React.Component {
           <Route path='/blog' component={Blog} />
           <Route path='/account' component={Account} />
           <Route path='/about' component={About} />
+          <Route path='item/:title' component={Item} />
           
         </Route>
       </Router>

@@ -13,7 +13,7 @@ class Blog extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get("https://raw.githubusercontent.com/orangeC/react/gh-pages/src/data/blogcard.json")
+    axios.get("https://raw.githubusercontent.com/orangeC/react/gh-pages/src/data/blogcard.json?a="+Math.random())
     .then(
         res => this.setState({data:res.data,wait:false})
       )
