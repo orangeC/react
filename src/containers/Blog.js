@@ -1,13 +1,6 @@
 import React from 'react';
 import BlogCard from "../components/BlogCard"
 
-let data=[
-  {index:1,title:"haha",desc:"hahaa"},
-  {index:2,title:"hehe",desc:"hehee"},
-  {index:3,title:"hchc",desc:"hchc"}
-]
-
-
 
 class Blog extends React.Component {
   constructor(){
