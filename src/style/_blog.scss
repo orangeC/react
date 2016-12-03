@@ -1,8 +1,9 @@
 .blog-wrap{
-	margin-top:10px ;
-}
-.blog-card{
-	padding:"0 10px";
+	margin-top:20px ;
+	.blog-card{
+	padding:0 10px;
+	max-width:600px;
+	margin:0 auto 10px;
 	.blog-index{
 		background-color: #00bcd4;
 		font-size: 1.5em;
@@ -22,4 +23,5 @@
 		padding:10px;
 		color: #666;
 	}
+}
 }
