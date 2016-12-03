@@ -1,9 +1,5 @@
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-import {Tabs, Tab} from 'material-ui/Tabs';
-import TimePicker from 'material-ui/TimePicker';
-import CircularProgress from 'material-ui/CircularProgress';
-import Paper from 'material-ui/Paper';
+import BlogCard from "../components/BlogCard"
 
 class Blog extends React.Component {
   constructor(){
@@ -48,25 +44,9 @@ class Blog extends React.Component {
       }
     }
     return(
-      <div style={{width:'100%'}}>
-      <RaisedButton label="cheng" />
-      <Tabs style={styles.tabs}>
-            <Tab label="one" />
-            <Tab label="two" />
-            <Tab label="three" />
-      </Tabs>
-      <TimePicker style={styles.timePicker}
-            hintText="12hr Format"
-          />
-          <TimePicker
-            format="24hr"
-            hintText="24hr Format"
-          />
-          <TimePicker
-            disabled={true}
-            format="24hr"
-            hintText="Disabled TimePicker"
-          />
+      <div style={{width:'100%'}} className="blog-wrap">
+      <BlogCard />
+      
       </div>
     )
   }
