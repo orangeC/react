@@ -12,9 +12,14 @@ class Loading extends React.Component {
   }
   
   render () {
+    let styles={
+      circle:{
+        left:"20vw"
+      }
+    }
     return(
       <div>
-        <CircularProgress size={7} style={{margin:"0 auto"}} />
+        <CircularProgress size={5} style={styles.circle} />
       </div>
     )
   }
