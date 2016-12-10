@@ -13,13 +13,16 @@ class Loading extends React.Component {
   
   render () {
     let styles={
+      root:{
+        textAlign:"center"
+      },
       circle:{
-        left:"20vw"
+        marginTop:"4rem"
       }
     }
     return(
-      <div>
-        <CircularProgress size={5} style={styles.circle} />
+      <div style={styles.root} >
+        <CircularProgress size={4.5} style={styles.circle} />
       </div>
     )
   }
