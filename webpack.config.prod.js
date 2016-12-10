@@ -41,6 +41,9 @@ module.exports = {
     {
       test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
       loader: "url?limit=10000"
+    },
+    { test: /\.scss$/,
+      loader: 'style!css!autoprefixer!sass' 
     }
   ]
   }
