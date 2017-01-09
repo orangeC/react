@@ -1,0 +1,186 @@
+
+.content-wrap{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+}
+.nav-header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 10px;
+  height:80px;
+  flex-shrink: 0;
+  background-color: #673AB7;
+  color:#fff;
+}
+.nav-header h3{
+  margin: 0;
+  font-weight: bold;
+}
+.nav-header p{
+  font-size: 18px;
+  background-color: rgba(0,0,0,0.3);
+  margin: 0;
+  border-radius: 8px;
+  padding:5px;
+}
+.nav-footer{
+  display:flex;
+  justify-content: space-around;
+  height:80px;
+  flex-shrink: 0;
+  background-color: #673AB7;
+}
+.nav-footer a{
+  text-decoration: none;
+}
+.content-main{
+  flex-grow: 1;
+  overflow-y:scroll;
+}
+.glyphicon{
+  color:#fff;
+}
+.nav-text{
+  color: rgba(0,0,0,0.6);
+  font-size: 20px;
+  width:25vw;
+  text-align: center;
+  padding-top:10px;
+  border-right:1px solid rgba(0,0,0,0.6);
+  font-weight: bold;
+}
+.nav-text-last{
+  border:none;
+}
+
+.home-active{
+  background-color: #FF4081;
+}
+.home-active:hover{
+  background-color: #00BCD4;
+}
+.blogBtn{
+  color:#FF4081;
+}
+.blogBtn:hover{
+  background-color: #FF4081;
+  color:#fff;
+}
+.text:hover{
+  background-color: #84FFFF;
+}
+@media(min-width:760px){
+  .content-wrap{
+    flex-direction: row;
+  }
+}
+
+
+/*md文件样式*/
+.post-content {
+  color: #6d6d6d;
+  line-height: 1.8;
+  width: 94%;
+  margin:0 auto;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10xp;
+  border: 1px solid #ddd;
+  background-color: rgb(70, 210, 228);
+  padding-top: 1em;
+  padding-bottom: 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin:20px;
+  border-radius:20px;
+}
+.post-content h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+.post-content ol {
+  padding-left: 20px;
+}
+.post-content ul {
+  padding-left: 20px;
+}
+.post-content li {
+  list-style-type: circle;
+}
+.post-content pre {
+  background-color: #f8f8f8;
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  color: #777777;
+  overflow-x: auto;
+  font-weight: 600;
+}
+.post-content pre code {
+  background-color: none;
+}
+.post-content p code {
+  font-size: 14px;
+  background-color: pink;
+  padding: 4px;
+}
+.post-content blockquote {
+  border-left: 5px solid #00bcd4;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 20px;
+  line-height: 30px;
+  margin-bottom: 33px;
+  margin-left: 0;
+}
+.post-content p {
+  color: #606060;
+  font-weight: 400;
+  line-height: 1.95;
+  margin-bottom: 20px;
+}
+.post-content img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.post-content a {
+  color: #ff4081;
+  text-decoration: none;
+}
+.post-content a:hover {
+  color: #444;
+}
+.post-content a.video {
+  display: block;
+  line-height: 2.3;
+  text-align: center;
+}
+
+/*search样式*/
+.gitinfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin:20px 10px;
+}
+.gitinfo-card{
+  width: 30%;
+  border-right: 1px solid #eee;
+}
+.gitinfo-card:last-child{
+  border-right: 0;
+}
+.gitinfo-card p{
+  line-height: 2.8em;
+}
+.gitinfo-card span{
+  line-height: 2.2em;
+  color:#E91E63;
+  font-weight: 600;
+}
