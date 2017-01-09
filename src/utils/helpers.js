@@ -10,7 +10,9 @@ function getWorkCard(){
     });
 }
 
+
 function getBlogCard(){
+  let address = `https://raw.githubusercontent.com/orangeC/reactData/master/BlogCard.json?${Math.random()}`
   return axios.get(address)
     .then((res) => (
       { getData:res.data }
