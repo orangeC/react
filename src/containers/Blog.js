@@ -24,12 +24,7 @@ class Blog extends React.Component {
       })
     })
   }
-  // componentDidMount(){
-  //   axios.get("https://raw.githubusercontent.com/orangeC/react/gh-pages/src/data/blogcard.json?a="+Math.random())
-  //   .then(
-  //       res => this.setState({data:res.data,wait:false})
-  //     )
-  // }
+  
   render () {
     return(
       <div style={{width:'100%'}} className="blog-wrap">
