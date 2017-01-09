@@ -11,7 +11,7 @@ class Item extends React.Component {
   }
   componentDidMount(){
     let address = this.props.params.title;
-    axios.get(`https://raw.githubusercontent.com/orangeC/react/gh-pages/src/data/${address}.md`)
+    axios.get(`https://raw.githubusercontent.com/orangeC/react/master/src/data/${address}.md`)
     .then(
         res => this.setState({ data:res.data })
       )
