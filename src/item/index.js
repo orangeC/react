@@ -19,7 +19,7 @@ class Item extends React.Component {
   render () {
     let content = this.state.data.length == 0 ? "骚等" : marked(this.state.data)
     return(
-      <div>
+      <div className="post-content">
         <div dangerouslySetInnerHTML={{__html:content}} />
       </div>
     )

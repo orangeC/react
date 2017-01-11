@@ -1,9 +1,10 @@
 .blog-wrap{
 	margin-top:20px ;
+	overflow:hidden ;
 	.blog-card{
 	padding:0 10px;
 	max-width:600px;
-	margin:0 auto 10px;
+	margin:0 auto 15px;
 	.blog-index{
 		background-color: #00bcd4;
 		font-size: 1.5em;
@@ -22,7 +23,7 @@
 		box-shadow: rgba(0,0,0,0.3) 1px 2px 6px;
 		padding:10px;
 		color: #666;
-		background-color: #FFF
+		background-color: #FFF;
 	}
 }
 }
