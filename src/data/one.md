@@ -1,4 +1,4 @@
-#冒泡排序
+# 冒泡排序
 
 ```
 function bubbleSort(arr){
@@ -15,7 +15,7 @@ function bubbleSort(arr){
 	return arr
 }
 ```
-#选择排序
+# 选择排序
 
 ```
 function selectionSort(arr){
