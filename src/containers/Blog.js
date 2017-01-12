@@ -26,8 +26,13 @@ class Blog extends React.Component {
   }
   
   render () {
+    let styles={
+      root:{
+        width:"100%"
+      }
+    }
     return(
-      <div style={{width:'100%'}} className="blog-wrap">
+      <div style={styles.root} className="blog-wrap">
       {this.state.wait ? <Loading /> : this.state.data.map( (item,i) => <BlogCard {...item} key={i} index={i+1} /> )}
       </div>
     )
