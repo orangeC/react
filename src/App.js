@@ -40,9 +40,15 @@ class App extends React.Component {
     this.refs.leftNav.handleToggle()
   }
   render () {
+    let styles={
+      root:{
+         flexWrap:"wrap",
+         flexBasis:"80px"
+      }
+    }
     return(
       <div className="content-wrap">
-        {this.state.navBarShow ? <NavLeft  title={this.state.title}/> : <AppBar title={this.state.title} onLeftIconButtonTouchTap={this.handleLeftBtn.bind(this)} /> }
+        {this.state.navBarShow ? <NavLeft  title={this.state.title}/> : <AppBar style={styles.root} title={this.state.title} onLeftIconButtonTouchTap={this.handleLeftBtn.bind(this)} /> }
         <div className="content-main">
           {this.state.navBarShow ? null : <NavBar ref="leftNav" />}
           {this.props.children}
