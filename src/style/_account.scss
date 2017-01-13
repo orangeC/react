@@ -22,10 +22,6 @@
       width: 100%;
       li {
         flex-grow: 1;
-        border-left: 1px solid rgba(0,0,0,0.1);
-        &:first-child {
-          border-left: none;
-        }
         span {
           display: block;
           font-size: 14px;

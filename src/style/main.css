@@ -4,9 +4,6 @@
   display:flex;
   flex-direction: column;
 }
-.content-wrap>div>h1{
-  font-size: 50px;
-}
 .nav-header{
   display:flex;
   align-items: center;

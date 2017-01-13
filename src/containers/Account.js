@@ -37,7 +37,7 @@ class Account extends React.Component{
 				<div className="account">
 				<Card className="content">
 					<form onSubmit={this.handleSubmit.bind(this)} >
-						<TextField hintText="write something" 
+						<TextField hintText=" Your Github Account" 
 						           ref="account" />
 						<FlatButton label=" submit " secondary={true} type="submit" />
 					</form>
