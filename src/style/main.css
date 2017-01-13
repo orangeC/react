@@ -179,4 +179,10 @@
   color:#E91E63;
   font-weight: 600;
 }
+@media(max-width: 760px){
+  .content-main .account .user-info ul{
+    width: 90%;
+    margin-left: .6em;
+  }
+}
 
