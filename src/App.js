@@ -42,8 +42,7 @@ class App extends React.Component {
   render () {
     let styles={
       root:{
-         flexWrap:"wrap",
-         flexBasis:"80px"
+         display:"block"
       }
     }
     return(

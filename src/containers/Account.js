@@ -6,6 +6,7 @@ import FlatButton from 'material-ui/FlatButton';
 import axios from 'axios';
 import isEmpty from 'lodash/isEmpty';
 import UserInfo from './../user/UserInfo';
+import Game from './../user/Game';
 
 class Account extends React.Component{
 	constructor(){
@@ -43,6 +44,7 @@ class Account extends React.Component{
 					</form>
 				</Card>
 				{GitHubInfo}
+				<Game />
 				</div>
 			)
 	}
