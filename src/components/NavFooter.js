@@ -20,8 +20,8 @@ class NavFooter extends React.Component {
             />
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-briefcase" />}
-              label="WORK"
-              value="/work"
+              label="SHOW"
+              value="/show"
             />
             <Tab
               icon={<FontIcon className="glyphicon glyphicon-briefcase" />}

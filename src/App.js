@@ -32,7 +32,7 @@ class App extends React.Component {
     this.setState({
       title:this.context.router.isActive('/',true) ? 'Home' :
             this.context.router.isActive('/blog') ? 'Blog' :
-            this.context.router.isActive('/work') ? 'Work' : 
+            this.context.router.isActive('/show') ? 'Exhibition' : 
             this.context.router.isActive('/account') ? 'Account' : 'info'
     })
   }
