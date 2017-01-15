@@ -54,4 +54,4 @@ console.log(container.childNodes.length)//结果为3
 
 通过上面的例子就很好地理解了什么是会实时更新的元素。document.getElementById返回的便是实时结果，上面对其添加一个子元素后，再次获取所有子元素个数，已经由原来的2个更新为3个(这里不考虑有些浏览器比如Chrome会把空白也解析为一个子节点)。
 
-[原文链接](http://www.nowamagic.net/librarys/veda/detail/388)
+[链接](http://www.nowamagic.net/librarys/veda/detail/388)
