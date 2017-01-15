@@ -2,5 +2,5 @@
   {"title":"十大经典算法排序","desc":"自己根据算法思想，自己编程实现十大排序算法，当然其中也有借鉴别人的地方，所有的程序都是自己经过检验测试没有问题才放出来的。","url":"one"},
   {"title":"浅谈viewport","desc":"在移动设备上进行网页的重构或开发，首先得搞明白的就是移动设备上的viewport了，只有明白了viewport的概念以及弄清楚了跟viewport有关的meta标签的使用，才能更好地让我们的网页适配或响应各种不同分辨率的移动设备。","url":"two"},
   {"title":"利用伪元素实现换行，替代换行标签","desc":"大家都知道，块级元素在不脱离正常布局流的情况下是会自动换行，而行级元素则不会自动换行。但在项目中，有需求是需要让行级元素也自动换行的，通常这种情况，我都是用换行标签 br 解决。这种方法不仅在可维护性方面是一种糟糕的实践，而且污染了结构层的代码。","url":"three"},
-  {"title":"第四章","desc":"第4章","url":"four"}
+  {"title":"HTML5中类jQuery选择器querySelector的使用","desc":"HTML5向Web API新引入了document.querySelector以及document.querySelectorAll两个方法用来更方便地从DOM选取元素，功能类似于jQuery的选择器。这使得在编写原生JavaScript代码时方便了许多。","url":"four"}
 ]
