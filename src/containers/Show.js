@@ -63,12 +63,12 @@ const tilesData = [
 const Show = () => (
   <div style={styles.root}>
     <GridList
-      cellHeight={180}
+      cellHeight={200}
       style={styles.gridList}
     >
       <Subheader style={styles.word}>个人作品展示</Subheader>
       {tilesData.map((tile) => (
-        <a className="showA" href={tile.ref} target="_blank"><GridTile
+        <a href={tile.ref} target="_blank"><GridTile
           key={tile.img}
           title={tile.title}
           subtitle={<span><b>{tile.author}</b></span>}

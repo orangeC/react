@@ -187,9 +187,6 @@
   position: fixed;
   bottom: 18vh;
 }
-.showA>div>div{
-  height:50px;
-}
 @media(max-width: 760px){
   .content-main .account .user-info ul{
     width: 90%;
